@@ -1,24 +1,18 @@
 package com.bridgelabz.generics;
 
-import org.junit.Test;
 import org.junit.Assert;
+import org.junit.Test;
 
 public class MaximumTest {
 	@Test
-	public void intMax() {
-		int actualValue = Maximum.testMaximum(9, 4, 1);
-		Assert.assertEquals(9, actualValue);
+	public void intMax1() {
+		int actualValue = Maximum.getmaximum(12, 14, 15);
+		Assert.assertEquals(15, actualValue);
 	}
 
 	@Test
-	public void floatMax() {
-		float actualValue = Maximum.testMaximum(1.5f, 9.1f, 4.4f);
-		Assert.assertEquals(9.1f, actualValue, 0);
-	}
-
-	@Test
-	public void stringMax() {
-		String actualValue = Maximum.testMaximum("apple", "peach", "banana");
-		Assert.assertEquals("peach", actualValue);
+	public void intMax2() {
+		int actualValue = Maximum.getmaximum(1000, 545, 746);
+		Assert.assertEquals(1000, actualValue);
 	}
 }
